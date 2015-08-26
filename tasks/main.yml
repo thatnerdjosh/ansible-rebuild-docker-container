@@ -1,0 +1,14 @@
+- name: Destroy {{ container_name }}
+  docker:
+    name: "{{ container_name }}"
+    image: "{{ image_name }}"
+    state: absent
+
+- name: Rebuild {{ container_name }}
+  docker:
+    name: "{{ container_name }}"
+    image: "{{ image_name }}"
+    state: started
+      
+    volumes: "{{ volumes | default() }}"
+    ports: "{{ ports | default() }}"
