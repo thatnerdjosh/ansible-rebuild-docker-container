@@ -1,0 +1,10 @@
+galaxy_info:
+author: Joshua Santos
+description: Ansible role to rebuild a docker container
+license: MIT
+min_ansible_version: 1.5
+categories:
+- system
+- cloud
+dependencies: []
+
