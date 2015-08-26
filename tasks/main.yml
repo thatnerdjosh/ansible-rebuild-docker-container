@@ -12,3 +12,4 @@
       
     volumes: "{{ volumes | default() }}"
     ports: "{{ ports | default() }}"
+    links: "{{ links | default() }}"
